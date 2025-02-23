@@ -1,0 +1,103 @@
+:root{
+    --cor-fundo:#FFFFFF;
+    --cor-texto:#667085;
+    --cor-texto-destaque:#8E2424;
+    --cor-titulo:#101828;
+
+    --max-width: 1200px;
+    --reset-margin: 0 auto;
+    --texto-principal:'Inter';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--texto-principal);
+}
+body,html{
+    height: 100%;
+    background-color: var(--cor-fundo);
+}
+.header{
+    max-width: var(--max-width);
+    margin: var(--reset-margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+.header__logo{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin-left: 2%;
+}
+.header__logo__img{
+    width: 27px;
+    height: 27px;
+}
+.header__navegacao{
+    margin-right: 25%;
+}
+.navegacao__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.navegacao__link a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 16px;
+    font-weight: 500;
+}
+.header__usuarios{
+    text-align: end;
+    margin-right: 2%;
+}
+.usuario__link{
+    padding: 18px 10px;
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.entrar{
+    color: var(--cor-texto);
+}
+.cadastrar{
+    background-color: var(--cor-texto-destaque);
+    color: var(--cor-fundo);
+    border-radius:8px ;
+}
+.cabecalho{
+    height: 407px;
+    display: flex;
+}
+.cabecalho__container{
+    max-width: var(--max-width);
+    margin: var(--reset-margin);
+    height: 407px;
+    align-content: center;
+    text-align: center;
+}
+.cabecalho__pre__titulo{
+    font-size: 16px;
+    color: var(--cor-texto-destaque);
+    font-weight: 600;
+}
+.cabecalho__titulo{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+.cabecalho__texto{
+    max-width: 791px;
+    font-size: 20px;
+    color: var(--cor-texto);
+}
